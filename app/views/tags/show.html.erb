@@ -1,0 +1,10 @@
+<% @articles.each do |article| %>
+	<p><strong>Title</strong> <%= article.title %></p>
+	<p><strong>Text</strong> <%= article.text %></p>
+	<strong>Tags:</strong>
+	<ul>
+		<% article.tag_list.each do |tag| %>
+			<li><%= raw link_to tag, tag_path(tag) %></li>
+		<% end %>
+	</ul>
+<% end %>

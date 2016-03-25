@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <%= yield :header %>
+
+</head>
+<body>
+	<div id="content">
+		<%= render "components/nav" %>
+		<main>
+			<%= yield %>
+		</main>
+	</div>
+
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= yield :scripts %>
+
+</body>
+</html>

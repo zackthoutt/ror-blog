@@ -1,0 +1,7 @@
+<p><strong>Name:</strong><%= comment.name %></p>
+<p><strong>Comment:</strong><%= comment.body %></p>
+<p>
+  <%= link_to 'Destroy Comment', article_comment_path(@article, comment),
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
