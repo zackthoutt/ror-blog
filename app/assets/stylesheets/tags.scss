@@ -1,3 +1,16 @@
 // Place all the styles related to the tags controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'base.scss';
+@import 'articles.scss';
+
+.tags {
+	width: 92%;
+	padding: 4%;
+	text-align: center;
+	h2 {
+		display: inline-block;
+		margin: 1% 3%;
+	}
+}

@@ -14,8 +14,7 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'base.scss';
 
 body {
 	margin: 0;
@@ -40,14 +39,74 @@ body {
 	}
 	a {
 		text-decoration: none !important;
+		color: $color-2;
 		> * {
+			border-bottom: 1px dotted $color-link;
 			&:hover {
-				color: blue;
+				color: $color-link;
 			}
 		}
 	}
 	p {
 		line-height: 25px;
+	}
+}
+
+button {
+	border: none;
+	padding: 10px 17px;
+	cursor: pointer;
+}
+input.text {
+	padding: 0.5% 1%;
+	outline: none;
+	border: none;
+	width: 80%;
+	max-width: 300px;
+	&:focus {
+		outline: $color-link;
+	}
+}
+textarea.text {
+	padding: 0.5% 1%;
+	outline: none;
+	border: none;
+	width: 80%;
+	max-width: 300px;
+	&:focus {
+		outline: $color-link;
+	}
+}
+input.white-dark {
+	border: none;
+	padding: 8px 17px;
+	cursor: pointer;
+	background-color: $color-0;
+	color: $color-2;
+	border: 2px solid $color-0;
+	@include smoothTransition;
+	&:hover {
+		background-color: $color-2;
+		color: $color-0;
+		@include smoothTransition;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+button.dark-white {
+	background-color: $color-2;
+	color: $color-0;
+	border: 2px solid $color-2;
+	@include smoothTransition;
+	&:hover {
+		background-color: $color-0;
+		color: $color-2;
+		@include smoothTransition;
+	}
+	&:focus {
+		outline: none;
 	}
 }
 

@@ -6,13 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-tags = Faker::Lorem.words(30)
-num_tags = [1, 2, 3]
+tags = Faker::Lorem.words(50)
+num_tags = [2, 3]
 
-10.times do
+5.times do
      Article.create(
         title: Faker::Lorem.sentence,
-        text: Faker::Lorem.paragraph,
-        tag_list: tags.sample(num_tags.sample(1)[0])
+        blurb: Faker::Lorem.paragraph(5),
+        text: Faker::Lorem.paragraphs(15).join("\n"),
+        tag_list: tags.sample(num_tags.sample(1)[0]),
       )
 end

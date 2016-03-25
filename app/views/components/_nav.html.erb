@@ -1,27 +1,30 @@
 <nav>
 	<div class="mobile">
-		<img class="mobile_logo" src="/images/layouts/logo.svg">
 		<div class="mobile_hamburger">
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
 	</div>
-	<img class="nav_logo" src="/images/layouts/logo.png">
+	<%= image_tag('ruby.svg', :class => "nav_logo") %>
 	<hr/>
 	<div class="nav_map">
-		<%= link_to(articles_path) do %>
+		<%= link_to(root_path) do %>
 			<h4>Home</h4>
+		<% end %>
+		<%= link_to(articles_path) do %>
+			<h4>Blog</h4>
 		<% end %>
 		<%= link_to(tags_path) do %>
 			<h4>Tags</h4>
 		<% end %>
-		<a href="/zthoutt/ror-blog">
+		<a href="https://github.com/zackthoutt/ror-blog">
 			<h4>Source Code</h4>
 		</a>
-
+		<a href="https://zackthoutt.com">
+			<h4>Main Site</h4>
+		</a>
 	</div>
-	<hr/>
-	@include('components.social')
-	<img class="flatirons" src="/images/layouts/flatirons.svg">
+
+
 </nav>

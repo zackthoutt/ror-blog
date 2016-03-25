@@ -1,0 +1,71 @@
+@import 'colors.scss';
+
+nav {
+	background-color: $color-3;
+	position: relative;
+	.mobile {
+		display: none;
+		cursor: pointer;
+		height: 50px;
+		.mobile_logo {
+			width: 25px;
+			margin: 0;
+			padding: 11.1px;
+			float: left;
+		}
+		.mobile_hamburger {
+			float: right;
+			padding: 16px;
+			span {
+				clear: both;
+				width: 25px;
+				height: 4px;
+				background-color: $color-0;
+				display: block;
+				transition: inherit;
+				position: relative;
+				transition: all 1s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+				&:not(:first-of-type) {
+					margin-top: 3px;
+				}
+			}
+			.nav-close-left {
+				transform: rotate(45deg) translateY(10px);
+				margin-left: 7.5px;
+			}
+			.nav-close-right {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+	.nav_logo {
+		width: 130px;
+		height: auto;
+		display: block;
+		margin: 35px auto 0 auto;
+	}
+	hr {
+		border-top: 5px solid $color-0;
+		border-bottom: 5px solid $color-0;
+		border-left: 1px solid $color-0;
+		border-right: 5px solid $color-0;
+		width: 200px;
+		margin: 24px auto 6px auto;
+	}
+	.nav_map {
+		width: 200px;
+		margin: 0 auto;
+		display: block;
+		h4 {
+			color: $color-0;
+			text-align: left;
+			width: 100%;
+			padding: 12px 0;
+			margin: 0;
+			border-bottom: none;
+			&:hover {
+				color: $color-link;
+			}
+		}
+	}
+}

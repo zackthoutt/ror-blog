@@ -1,5 +1,10 @@
-<h1>Hello there</h1>
-<h2><%= Faker::Name.name %></h2>
-<% @tags.each do |tag| %>
-	<p><%= link_to "(#{tag.count}) #{tag.name}", tag_path(tag.name) %></p>
-<% end %>
+<div class="intro">
+	<h1>The tag index!</h1>
+</div>
+<div class="tags">
+	<% @tags.each do |tag| %>
+		<%= link_to(tag_path(tag.name)) do %>
+			<h2>(<%= tag.count %>) <%= tag.name %></h2>
+		<% end %>
+	<% end %>
+</div>

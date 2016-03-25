@@ -1,0 +1,6 @@
+@mixin smoothTransition {
+	transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+	-webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+	-moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+	-o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+}

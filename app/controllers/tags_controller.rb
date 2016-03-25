@@ -4,6 +4,7 @@ class TagsController < ApplicationController
 	end
 
 	def show
+		@tag = params[:id]
 		@articles = Article.tagged_with(params[:id])
 	end
 end

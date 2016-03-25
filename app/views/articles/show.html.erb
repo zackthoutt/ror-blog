@@ -1,26 +1,50 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<section class="post">
+    <div class="post_content">
+		<article>
+		    <img src="/images/iceland.jpg">
+		    <div class="content">
+		        <h1><%= @article.title %></h1>
+		        <div class="content_meta">
+		            <div class="content_meta_category">
+		                <img src="/images/topics.svg">
+		                <%= link_to(edit_article_path(@article)) do %>
+		                    <h4>Edit</h4>
+		                <% end %>
+		                <%= link_to(article_path(@article), method: :delete) do %>
+		                    <h4>Delete</h4>
+		                <% end %>
+		            </div>
+		            <div class="content_meta_tags">
+		                <img src="/images/tag.svg">
+		                <% @article.tag_list.each_with_index do |tag, index| %>
+		                    <%= link_to(tag_path(tag)) do %>
+		                        <% if index == @article.tag_list.size - 1%>
+		                         <h4><%= tag %></h4>
+		                        <% else %>
+		                            <h4><%= tag %>,</h4>
+		                        <% end %>
+		                    <% end %>
+		                <% end %>
+		            </div>
+		            <div class="content_meta_time">
+		                <img src="/images/time.svg">
+		                <h4><%= @article.updated_at.strftime('%b %d, %Y') %></h4>
+		            </div>
+		        </div>
+		        <% @article.text.split("\n").each do |para| %>
+		        	<p><%= para %></p>
+		        <% end %>
+		    </div>
+		</article>
+    </div>
+    <dir class="post_blank"></dir>
+</section>
 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+<section class="comments">
+	<h2>Comments:</h2>
+	<%= render @article.comments %>
 
-<strong>Tags:</strong>
-<ul>
-	<% @article.tag_list.each do |tag| %>
-		<li><%= raw link_to tag, tag_path(tag) %></li>
-	<% end %>
-</ul>
+	<h5>Add a comment</h5>
+	<%= render 'comments/form' %>
+</section>
 
-<h2>Comments</h2>
-<%= render @article.comments %>
-
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
-
-
-<%= link_to 'Articles', articles_path %>
-<%= link_to 'Edit', edit_article_path(@article) %>
