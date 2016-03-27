@@ -51,7 +51,9 @@ body {
 		line-height: 25px;
 	}
 }
-
+.notice {
+	color: $color-link;
+}
 button {
 	border: none;
 	padding: 10px 17px;

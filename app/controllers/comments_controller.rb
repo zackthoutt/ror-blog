@@ -1,7 +1,12 @@
 class CommentsController < ApplicationController
 	def create
 		@article = Article.find(params[:article_id])
-		@comment = @article.comments.create(comment_params)
+		num_comments = @article.comments.length
+		if num_comments <= 4
+			@comment = @article.comments.create(comment_params)
+		else
+			flash[:max_comments] = "The maximum number of comments has been reached."
+		end
 		redirect_to article_path(@article)
 	end
 

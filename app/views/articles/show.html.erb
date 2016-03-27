@@ -8,7 +8,9 @@
 <section class="comments">
 	<h2>Comments:</h2>
 	<%= render @article.comments %>
-
+	<% if flash[:max_comments] %>
+		<p class="notice"><%= flash[:max_comments] %></p>
+	<% end %>
 	<h5>Add a comment</h5>
 	<%= render 'comments/form' %>
 </section>
