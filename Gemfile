@@ -31,6 +31,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # add polymorphic tagging
 gem 'acts-as-taggable-on', '~> 3.4'
 
+#seed database with faker
+gem 'faker'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -43,7 +46,6 @@ gem 'acts-as-taggable-on', '~> 3.4'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'faker'
 end
 
 group :development do
@@ -54,3 +56,7 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  # install unicorn http server
+  gem 'unicorn'
+end

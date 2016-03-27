@@ -1,0 +1,9 @@
+I, [2016-03-27T17:01:58.685685 #11757]  INFO -- : Refreshing Gem list
+I, [2016-03-27T17:02:00.284823 #11757]  INFO -- : listening on addr=/home/zack/ror-blog/shared/sockets/unicorn.sock fd=11
+I, [2016-03-27T17:02:00.284963 #11757]  INFO -- : worker=0 spawning...
+I, [2016-03-27T17:02:00.286225 #11757]  INFO -- : worker=1 spawning...
+I, [2016-03-27T17:02:00.287014 #11760]  INFO -- : worker=0 spawned pid=11760
+I, [2016-03-27T17:02:00.287143 #11760]  INFO -- : worker=0 ready
+I, [2016-03-27T17:02:00.288066 #11757]  INFO -- : master process ready
+I, [2016-03-27T17:02:00.292438 #11763]  INFO -- : worker=1 spawned pid=11763
+I, [2016-03-27T17:02:00.292574 #11763]  INFO -- : worker=1 ready
