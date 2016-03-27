@@ -24,6 +24,15 @@
 		<a href="https://zackthoutt.com">
 			<h4>Main Site</h4>
 		</a>
+		<% if admin_signed_in? %>
+			<%= link_to(destroy_admin_session_path, :method => :delete) do %>
+				<h4>Sign Out</h4>
+			<% end %>
+		<% else %>
+			<%= link_to(new_admin_session_path) do %>
+				<h4>Sign In</h4>
+			<% end %>
+		<% end %>
 	</div>
 
 

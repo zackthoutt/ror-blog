@@ -2,7 +2,9 @@
     <img src="/images/iceland.jpg">
     <div class="content">
         <h1><%= article.title %></h1>
-        <p><%= article.blurb %></p>
+        <% if list %>
+            <p><%= article.blurb %></p>
+        <% end %>
         <div class="content_meta">
             <div class="content_meta_category">
                 <img src="/images/topics.svg">
@@ -30,10 +32,16 @@
                 <h4><%= article.updated_at.strftime('%b %d, %Y') %></h4>
             </div>
         </div>
-        <%= link_to(article_path(article)) do %>
-            <button class="dark-white">
-                Read more
-            </button>
+        <% if list %>
+            <%= link_to(article_path(article)) do %>
+                <button class="dark-white">
+                    Read more
+                </button>
+            <% end %>
+        <% else %>
+            <% article.text.split("\n").each do |para| %>
+                <p><%= para %></p>
+            <% end %>
         <% end %>
     </div>
 </article>

@@ -7,7 +7,7 @@
         <div class="articles_list_header">
             <h1>My RoR Articles</h1>
         </div>
-        <%= render @articles %>
+        <%= render :partial => 'article', :collection => @articles, :locals => {list: true} %>
     </div>
     <dir class="articles_blank"></dir>
 </section>

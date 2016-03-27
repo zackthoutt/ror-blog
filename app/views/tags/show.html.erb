@@ -3,7 +3,7 @@
         <div class="articles_list_header">
             <h1><%= @tag %> Articles</h1>
         </div>
-        <%= render @articles %>
+        <%= render :partial => 'articles/article', :collection => @articles, :locals => {list: true} %>
     </div>
     <dir class="articles_blank"></dir>
 </section>

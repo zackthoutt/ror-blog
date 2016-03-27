@@ -1,9 +1,11 @@
 <div class="comment">
 	<h3><%= comment.name %></h3>
 	<p><%= comment.body %></p>
-	<p>
-	  <%= link_to 'Destroy Comment', article_comment_path(@article, comment),
-	               method: :delete,
-	               data: { confirm: 'Are you sure?' } %>
-	</p>
+
+		<p>
+		  <%= link_to 'Destroy Comment', article_comment_path(@article, comment),
+		               method: :delete,
+		               data: { confirm: 'Are you sure?' } %>
+		</p>
+
 </div>
