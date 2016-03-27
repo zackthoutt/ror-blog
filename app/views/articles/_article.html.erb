@@ -1,35 +1,35 @@
-<article>
-    <img src="/images/iceland.jpg">
-    <div class="content">
-        <h1><%= article.title %></h1>
+<article class="Article">
+    <img class="Article__previewImage" src="/images/iceland.jpg">
+    <div class="Article__content">
+        <h1 class="Article__title"><%= article.title %></h1>
         <% if list %>
-            <p><%= article.blurb %></p>
+            <p class="Article__blurb"><%= article.blurb %></p>
         <% end %>
-        <div class="content_meta">
-            <div class="content_meta_category">
-                <img src="/images/topics.svg">
+        <div class="Article__meta">
+            <div class="Article__edit">
+                <img class="Article__icon" src="/images/topics.svg">
                 <%= link_to(edit_article_path(article)) do %>
-                    <h4>Edit</h4>
+                    <h4 class="Article__attr">Edit</h4>
                 <% end %>
                 <%= link_to(article_path(article), method: :delete) do %>
-                    <h4>Delete</h4>
+                    <h4 class="Article__attr">Delete</h4>
                 <% end %>
             </div>
-            <div class="content_meta_tags">
-                <img src="/images/tag.svg">
+            <div class="Article__tags">
+                <img class="Article__icon" src="/images/tag.svg">
                 <% article.tag_list.each_with_index do |tag, index| %>
                     <%= link_to(tag_path(tag)) do %>
                         <% if index == article.tag_list.size - 1%>
-                         <h4><%= tag %></h4>
+                         <h4 class="Article__attr"><%= tag %></h4>
                         <% else %>
-                            <h4><%= tag %>,</h4>
+                            <h4 class="Article__attr"><%= tag %>,</h4>
                         <% end %>
                     <% end %>
                 <% end %>
             </div>
-            <div class="content_meta_time">
-                <img src="/images/time.svg">
-                <h4><%= article.updated_at.strftime('%b %d, %Y') %></h4>
+            <div class="Article__time">
+                <img class="Article__icon" src="/images/time.svg">
+                <h4 class="Article__attr"><%= article.updated_at.strftime('%b %d, %Y') %></h4>
             </div>
         </div>
         <% if list %>
@@ -40,7 +40,7 @@
             <% end %>
         <% else %>
             <% article.text.split("\n").each do |para| %>
-                <p><%= para %></p>
+                <p class="Article__body"><%= para %></p>
             <% end %>
         <% end %>
     </div>

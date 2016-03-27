@@ -2,12 +2,12 @@
     <title>RoR Blog</title>
 <% end %>
 
-<section class="articles">
-    <div class="articles_list">
-        <div class="articles_list_header">
-            <h1>My RoR Articles</h1>
+<section class="Articles">
+    <div class="Articles__list">
+        <div class="Articles__header">
+            <h1 class="Articles__title">My RoR Articles</h1>
         </div>
         <%= render :partial => 'article', :collection => @articles, :locals => {list: true} %>
     </div>
-    <dir class="articles_blank"></dir>
+    <dir class="Articles__blank"></dir>
 </section>

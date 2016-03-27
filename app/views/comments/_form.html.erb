@@ -1,13 +1,13 @@
 <%= form_for([@article, @article.comments.build]) do |f| %>
   <p>
     <%= f.label :name %><br>
-    <%= f.text_field :name, :class => 'text' %>
+    <%= f.text_field :name, :class => 'Form__text' %>
   </p>
   <p>
     <%= f.label :body %><br>
-    <%= f.text_area :body, :class => 'text' %>
+    <%= f.text_area :body, :class => 'Form__text' %>
   </p>
   <p>
-    <%= f.submit 'Submit', :class => 'white-dark' %>
+    <%= f.submit 'Submit', :class => 'Form__whiteDark' %>
   </p>
 <% end %>

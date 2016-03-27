@@ -51,50 +51,10 @@ body {
 		line-height: 25px;
 	}
 }
-.notice {
-	color: $color-link;
-}
 button {
 	border: none;
 	padding: 10px 17px;
 	cursor: pointer;
-}
-input.text {
-	padding: 0.5% 1%;
-	outline: none;
-	border: none;
-	width: 80%;
-	max-width: 300px;
-	&:focus {
-		outline: $color-link;
-	}
-}
-textarea.text {
-	padding: 0.5% 1%;
-	outline: none;
-	border: none;
-	width: 80%;
-	max-width: 300px;
-	&:focus {
-		outline: $color-link;
-	}
-}
-input.white-dark {
-	border: none;
-	padding: 8px 17px;
-	cursor: pointer;
-	background-color: $color-0;
-	color: $color-2;
-	border: 2px solid $color-0;
-	@include smoothTransition;
-	&:hover {
-		background-color: $color-2;
-		color: $color-0;
-		@include smoothTransition;
-	}
-	&:focus {
-		outline: none;
-	}
 }
 
 button.dark-white {

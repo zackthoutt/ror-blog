@@ -1,3 +1,30 @@
-// Place all the styles related to the Comments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'base.scss';
+
+.Comments {
+	padding: 2.5%;
+	background-color: $color-2;
+	color: $color-0;
+}
+.Comments__title {
+
+}
+.Comments__add {
+
+}
+
+.Comment {
+	background-color: $color-0;
+	color: $color-2;
+	padding: 1% 2.5%;
+	max-width: 600px;
+	margin: 0 0 1.5% 0;
+}
+.Comment__name {
+
+}
+.Comment__body {
+
+}
+.Comment__delete {
+
+}

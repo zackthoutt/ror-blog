@@ -1,17 +1,17 @@
-<section class="post">
-    <div class="post_content">
+<section class="Post">
+    <div class="Post__content">
     	<%= render :partial => 'article', :locals => {list: false, article: @article} %>
     </div>
-    <dir class="post_blank"></dir>
+    <dir class="Post__blank"></dir>
 </section>
 
-<section class="comments">
-	<h2>Comments:</h2>
+<section class="Comments">
+	<h2 class="Comments__title">Comments:</h2>
 	<%= render @article.comments %>
 	<% if flash[:max_comments] %>
-		<p class="notice"><%= flash[:max_comments] %></p>
+		<p class="Utilities__notice"><%= flash[:max_comments] %></p>
 	<% end %>
-	<h5>Add a comment</h5>
+	<h5 class="Comments__add">Add a comment</h5>
 	<%= render 'comments/form' %>
 </section>
 

@@ -1,0 +1,30 @@
+@import 'colors.scss';
+@import 'transitions.scss';
+
+.Form__text {
+	padding: 0.5% 1%;
+	outline: none;
+	border: none;
+	width: 80%;
+	max-width: 300px;
+	&:focus {
+		outline: $color-link;
+	}
+}
+.Form__whiteDark {
+	border: none;
+	padding: 8px 17px;
+	cursor: pointer;
+	background-color: $color-0;
+	color: $color-2;
+	border: 2px solid $color-0;
+	@include smoothTransition;
+	&:hover {
+		background-color: $color-2;
+		color: $color-0;
+		@include smoothTransition;
+	}
+	&:focus {
+		outline: none;
+	}
+}

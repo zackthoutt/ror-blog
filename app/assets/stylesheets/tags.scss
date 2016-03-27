@@ -5,12 +5,12 @@
 @import 'base.scss';
 @import 'articles.scss';
 
-.tags {
+.Tags {
 	width: 92%;
 	padding: 4%;
 	text-align: center;
-	h2 {
-		display: inline-block;
-		margin: 1% 3%;
-	}
+}
+.Tags__name {
+	display: inline-block;
+	margin: 1% 3%;
 }

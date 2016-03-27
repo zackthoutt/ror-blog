@@ -1,10 +1,10 @@
-<div class="intro">
+<div class="Utilities__header">
 	<h1>The tag index!</h1>
 </div>
-<div class="tags">
+<div class="Tags">
 	<% @tags.each do |tag| %>
 		<%= link_to(tag_path(tag.name)) do %>
-			<h2>(<%= tag.count %>) <%= tag.name %></h2>
+			<h2 class="Tags__name">(<%= tag.count %>) <%= tag.name %></h2>
 		<% end %>
 	<% end %>
 </div>
