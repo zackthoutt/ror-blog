@@ -9,7 +9,7 @@
 tags = Faker::Lorem.words(50)
 num_tags = [2, 3]
 
-5.times do
+30.times do
      Article.create(
         title: Faker::Lorem.sentence,
         blurb: Faker::Lorem.paragraph(5),

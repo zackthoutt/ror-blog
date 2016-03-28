@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$('.Navbar__hamburger').click(function() {
+	if ($('.Navbar__map').css('display') == 'none') {
+		$('.Navbar__map').slideDown();
+	} else {
+		$('.Navbar__map').slideUp();
+	}
+});
+

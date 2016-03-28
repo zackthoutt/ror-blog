@@ -69,3 +69,36 @@
 		color: $color-link;
 	}
 }
+
+@media only screen and (max-width: 800px) {
+	.Navbar__mobile {
+		display: block;
+	}
+	.Navbar__logo {
+		display: none;
+	}
+	.Navbar__break {
+		display: none;
+	}
+	.Navbar__map {
+		display: none;
+		background-color: $color-2;
+		width: 100%;
+		a {
+			&:last-of-type {
+				h4 {
+					padding-bottom: 20px;
+				}
+			}
+			&:first-of-type {
+				h4 {
+					padding-top: 20px;
+				}
+			}
+		}
+		h4 {
+			text-align: center;
+		}
+	}
+}
+

@@ -1,0 +1,15 @@
+@import 'base.scss';
+
+.Signin {
+	padding: 5%;
+	background-color: $color-4;
+	display: block;
+	width: 80%;
+	max-width: 400px;
+	min-height: 300px;
+	margin: 0 auto;
+	color: $color-0;
+	.field {
+		margin: 4% 0;
+	}
+}
