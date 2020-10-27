@@ -109,7 +109,7 @@ GEM
     rack (>= 2.1.4)
     rack-test (0.6.3)
       rack (>= 2.1.4)
-    rails (4.2.6)
+    rails (5.2.4.3)
       actionmailer (= 4.2.6)
       actionpack (= 4.2.6)
       actionview (>= 5.2.4.4)
@@ -202,7 +202,7 @@ DEPENDENCIES
   faker
   jbuilder (~> 2.0)
   jquery-rails
-  rails (= 4.2.6)
+  rails (= 5.2.4.3)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
