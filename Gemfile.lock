@@ -126,7 +126,7 @@ GEM
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (>= 1.10.8)
       rails-deprecated_sanitizer (>= 1.0.1)
-    rails-html-sanitizer (1.0.4)
+    rails-html-sanitizer (= 1.0.4)
       loofah (~> 2.0)
     railties (4.2.6)
       actionpack (= 4.2.6)
