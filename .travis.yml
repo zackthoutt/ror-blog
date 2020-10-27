@@ -1,2 +1,9 @@
+language: ruby
+rvm:
+ - 2.7.2
+rails:
+ - 6.0
 install:
   - bundle install
+  - rails server
+  - rake db:seed
