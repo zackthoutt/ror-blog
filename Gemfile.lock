@@ -179,7 +179,7 @@ GEM
       rack (>= 2.1.4)
       raindrops (~> 0.7)
     warden (1.2.3)
-      rack (>= 1.0)
+      rack (>= 2.1.4)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
