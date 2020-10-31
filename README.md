@@ -1,4 +1,3 @@
-[![Build Status](https://secure.travis-ci.org/galopeian1/ror-blog.png?branch=master)](http://travis-ci.org/galopeian1/ror-blog)
 # What is this?
 This repo contains a sample blog built with Ruby on Rails. There are instructions below to get the app working in both development and production environments.
 
