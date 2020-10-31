@@ -19,7 +19,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 
 # database
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.4.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -39,7 +39,7 @@ gem 'acts-as-taggable-on', '~> 3.4'
 gem 'faker'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 gem 'unicorn'
