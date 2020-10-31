@@ -18,6 +18,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # authentication
 gem 'devise'
 
+# database
+gem 'sqlite3'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'therubyracer'
