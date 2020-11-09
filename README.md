@@ -17,7 +17,7 @@ This repo contains a sample blog built with Ruby on Rails. There are instruction
 4. Data
   - Article and tag data can be seeded using a database seeder
 5. Assets
-  - SASS is comipled into CSS and serverd to the user
+  - SASS is compiled into CSS and serverd to the user
   - Coffee script is compiled into JS and served to the user
 6. Production
   - The code can run in a production environment using Nginx, Unicorn, and Linux
